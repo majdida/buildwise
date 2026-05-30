@@ -1,0 +1,118 @@
+.hero {
+    position: relative;
+    color: #fff;
+    padding: 80px 24px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.35);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    color: #ddd;
+    margin-bottom: 28px;
+    line-height: 1.7;
+}
+
+.hero-btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.hero-btn:hover {
+    background-color: #e67e22;
+}
+
+.calculators-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.calculators-section h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 1.4rem;
+    color: #2c3e50;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.calc-card-home {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 28px 22px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.15s, box-shadow 0.15s;
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.calc-card-home:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.calc-card-home .card-icon {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.calc-card-home h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.calc-card-home p {
+    color: #777;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.card-link {
+    margin-top: 16px;
+    color: #f39c12;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
