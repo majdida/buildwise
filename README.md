@@ -96,6 +96,16 @@ I put each page in its own file and each component has its own CSS file to keep 
 
 ## Screenshots
 
+![Home Page](UI-screenshots/9.png)
+![Concrete Calculator](UI-screenshots/1.png)
+![Paint Calculator](UI-screenshots/2.png)
+![Room Calculator](UI-screenshots/3.png)
+![Material Calculator](UI-screenshots/4.png)
+![About Page](UI-screenshots/5.png)
+![Contact Page](UI-screenshots/6.png)
+![Home Page on Mobile](UI-screenshots/8.png)
+![Calculator Page on Mobile](UI-screenshots/7.png)
+
 
 
 ---
