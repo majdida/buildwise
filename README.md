@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# BuildWise - Construction Calculator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my project for the web development course. I built a React app called BuildWise that helps people calculate things related to construction like how much concrete they need, how many bricks, paint, and the area of a room.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+The idea came from thinking about something useful. A lot of people who do construction work or even just renovating their house have to do these calculations manually or use complicated software. So I made a simple website with 4 calculators:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Concrete Volume Calculator** - you enter the length, width and height and it tells you how many cubic meters of concrete you need
+- **Paint Calculator** - calculates how many liters of paint you need based on the room size
+- **Room Area Calculator** - simple length x width to get the floor area in m²
+- **Material Estimator** - estimates how many bricks you need for a wall (uses 60 bricks per m² as the standard)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+There's also an About page that explains the project and a Contact page with a form.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Run the Project
 
-### `npm run build`
+First make sure you have Node.js installed on your computer.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Then follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+git clone https://github.com/YOUR_USERNAME/buildwise.git
 
-### `npm run eject`
+# go into the folder
+cd buildwise
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# install the packages
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# run it
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+It should open automatically at `http://localhost:3000` in your browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If you want to build it for production:
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+I organized the files like this:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+buildwise/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   │   └── hero-bg.jpg
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   └── Footer.js
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── Concrete.js
+│   │   ├── Paint.js
+│   │   ├── Area.js
+│   │   ├── Materials.js
+│   │   ├── About.js
+│   │   └── Contact.js
+│   ├── styles/
+│   │   ├── Navbar.css
+│   │   ├── Footer.css
+│   │   ├── Home.css
+│   │   ├── Calculator.css
+│   │   ├── About.css
+│   │   └── Contact.css
+│   ├── App.js
+│   └── index.css
+└── package.json
+```
 
-### Analyzing the Bundle Size
+I put each page in its own file and each component has its own CSS file to keep things organized.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Technologies I Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **React** - for building the UI with components
+- **React Router DOM** - for navigating between pages without reloading
+- **CSS3** - I wrote all the styling myself, used flexbox and grid for layout
+- **Google Fonts** - used the Poppins font
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Screenshots
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Features
+
+- Works on mobile and desktop (I added a hamburger menu for small screens)
+- No login needed
+- Results show up instantly
+- Simple and clean design
